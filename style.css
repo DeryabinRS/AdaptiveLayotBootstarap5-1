@@ -1,0 +1,94 @@
+:root{
+    --g_color_1: #0F7BFF;
+    --g_color_2: #0063DD;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.bg1{background: var(--g_color_1);}
+
+h2{
+    font-size: 36px;
+}
+h2{
+    font-size: 32px;
+}
+
+.navbar {
+    padding: 0;
+}
+.navbar .navbar-nav{
+    align-items: center;
+}
+.navbar .nav-item{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.navbar .nav-item .nav-link{
+    color: #929292;
+    margin-right: 25px;
+}
+.navbar .nav-item .nav-link.active{
+    color: var(--g_color_1);
+}
+.navbar .navbar-brand{
+    background: var(--g_color_1);
+    color:#fff;
+    font-weight: 700;
+    padding: 25px 23px 30px 23px;
+    font-size: 36px;
+    line-height: 45px;
+    border-radius: 0px 0px 21.5px 21.5px;
+}
+
+.btn-custom-1{
+    background: var(--g_color_2);
+    color:#fff;
+    border-radius: 25px;
+    padding: 15px 60px;
+    text-decoration: none;
+}
+
+.btn-custom-1:hover{
+    background: rgb(127, 182, 255);
+}
+
+.btn_menu a{
+    color:#fff;
+    text-decoration: none;
+}
+
+#top-section{
+    height: 100vh;
+    background-image: url('img/Vector 1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+}
+
+#top-section .title_box{
+    margin-top: 90px;
+    max-width: 655px;
+}
+
+.title_box{
+    margin: 90px auto;
+}
+.title_box h2{
+    font-weight: bold;
+}
+.title_box p {
+
+}
+
+
+
+@media (min-width: 1700px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1640px;
+    }
+}
