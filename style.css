@@ -104,11 +104,32 @@ h2{
     margin: 0 15px;
 }
 
+.devices{
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    max-height: 800px;
+}
+.devices .device:nth-child(1){
+    width: 30%;
+    margin-top: 90px;
+}
+.devices .device:nth-child(2){
+    width: 40%;
+    margin: 0 -100px 0 -85px;
+    z-index: 1;
+}
+.devices .device:nth-child(3){
+    width: 30%;
+    margin-top: 90px;
+}
 
 
-@media (min-width: 1800px){
+
+@media (min-width: 1900px){
     #top-section {
-        background-position: 100% 0%;
+        background-position: 90% 0%;
     }
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1640px;
