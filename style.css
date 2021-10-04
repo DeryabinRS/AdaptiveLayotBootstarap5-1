@@ -1,20 +1,22 @@
 :root{
     --g_color_1: #0F7BFF;
     --g_color_2: #0063DD;
+    --g_color_3: #F5FCFD;
 }
 
 body{
     font-family: 'Quicksand', sans-serif;
 }
 
-.bg1{background: var(--g_color_1);}
+a{color: var(--g_color_2)}
 
-h2{
-    font-size: 36px;
-}
-h2{
-    font-size: 32px;
-}
+.bg1{background: var(--g_color_1);}
+.bg2{background: var(--g_color_2);}
+.bg3{background: var(--g_color_3);}
+
+h1{font-size: 36px;}
+h2{font-size: 32px;}
+h5{font-size: 18px;}
 
 .navbar {
     padding: 0;
@@ -82,6 +84,7 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 0%;
+    overflow: hidden;
 }
 
 #top-section .title_box{
@@ -110,7 +113,9 @@ h2{
     margin: 0 auto;
     justify-content: center;
     max-height: 800px;
+    margin-bottom: -140px;
 }
+
 .devices .device:nth-child(1){
     width: 30%;
     margin-top: 90px;
@@ -126,12 +131,183 @@ h2{
 }
 
 
+.arrow-top{
+    position: absolute;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -78px;
+}
+
+.section-2{
+    position: relative;
+    margin-top: -20px;
+    display: flex;
+    padding: 160px 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cardbox {
+    position: relative;
+    text-align: center;
+    max-width: 362px;
+    margin: 5px 15px;
+}
+
+.cardbox h5{
+    margin-top: 25px;
+}
+
+.cardbox p{
+    margin-top: 25px;
+}
+
+.section-2 .cardbox{
+    padding: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
+    border-radius: 5px;
+    align-self: stretch;
+    position: relative;
+}
+
+.section-3{
+    position: relative;
+}
+.section-3 img{
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+}
+.section-3 .img{
+    position: relative;
+}
+.section-3 .imgSadow1::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(147.4deg, var(--g_color_1) 7.27%, var(--g_color_2) 93.68%);
+    border-radius: 40px;
+    transform: matrix(0.77, 0.64, -0.64, 0.77, -44, 0);
+    z-index: 1;
+}
+
+.section-3 .imgSadow2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:50px;
+    left: 100px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(147.4deg, var(--g_color_1) 7.27%, var(--g_color_2) 93.68%);
+    border-radius: 40px;
+    transform: matrix(0.77, 0.64, -0.64, 0.77, -44, 0);
+    z-index: 1;
+}
+
+.section-3 .content_box{
+    position: relative;
+}
+.section-3 .content_box p{
+    margin: 0;
+}
+.section-3 .content_box a{
+    display: block;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 35px;
+}
+
+.section-4{
+    padding-top: 120px;
+    padding-bottom: 130px;
+}
+.section-4 .title_box{
+    max-width: 722px;
+    margin: 0px auto;
+}
+
+.section-4 .title_box h2{
+    font-weight: 500;
+}
+
+.section-4 .cards .cardbox img{
+    position: relative;
+    z-index: 1;
+}
+.section-4 .cards .cardbox:nth-child(1)::after,
+.section-4 .cards .cardbox:nth-child(2)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border: 2px dashed var(--g_color_1);
+    top:50px;
+    right: -50%;
+    z-index: 0;
+}
+
+.section-5 {
+    padding: 130px 0;
+}
+.section-5 .cards .cardbox:nth-child(n+2){
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 36, 80, 0.08);
+    border-radius: 5px;
+    min-width: 360px;
+    padding: 45px 30px;
+}
+
+.section-5 .cards .cardbox .price{
+    font-size: 32px;
+    color: var(--g_color_2);
+    font-weight: 500;
+}
+.section-5 .cards .cardbox .price span{ font-size: 16px;}
+
+.section-5 .cards .cardbox .btns{
+    padding-top: 25px;
+}
 
 @media (min-width: 1900px){
     #top-section {
         background-position: 90% 0%;
     }
-    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    .container-xxl {
         max-width: 1640px;
+    }
+}
+@media (min-width: 1400px){
+    .section-2 .cardbox1:nth-child(2){
+        top:50px
+    }
+    .container{
+        max-width: 1170px;
+    }
+}
+@media (max-width: 1399px){
+    .section-3 .img::after{
+        display: none;
+    }
+    .section-4 .cards .cardbox:nth-child(1)::after,
+    .section-4 .cards .cardbox:nth-child(2)::after {display: none;}
+    .container{
+        max-width: 1170px;
     }
 }
