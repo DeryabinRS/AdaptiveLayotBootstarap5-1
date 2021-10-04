@@ -79,12 +79,13 @@ h5{font-size: 18px;}
 }
 
 #top-section{
-    min-height: 95vh;
     background-image: url('img/Vector 1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 0%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 #top-section .title_box{
@@ -104,31 +105,51 @@ h5{font-size: 18px;}
 }
 
 .buttons_blk .btn{
-    margin: 0 15px;
+    margin: 5px 15px;
+    clear: both;
 }
 
 .devices{
-    max-width: 1000px;
+    max-width: 1300px;
     display: flex;
     margin: 0 auto;
-    justify-content: center;
-    max-height: 800px;
-    margin-bottom: -140px;
+    justify-content: space-around;
+    margin-bottom: -120px;
+}
+
+.devices .device{
+    flex-direction: column-reverse;
+    display: flex;
+}
+
+.devices .device img{
+    animation: animation_devices 3s infinite;
+}
+
+@keyframes animation_devices{
+    0%{top: 0;}
+    50%{top: 20px;}
+    100%{top: 0px;}
 }
 
 .devices .device:nth-child(1){
-    width: 30%;
     margin-top: 90px;
+    position: relative;
+    animation: animation_devices 3s infinite;
 }
 .devices .device:nth-child(2){
-    width: 40%;
-    margin: 0 -100px 0 -85px;
+    margin: 0 -95px 0 -80px;
     z-index: 1;
+    position: relative;
+    animation: animation_devices 4s infinite;
 }
 .devices .device:nth-child(3){
-    width: 30%;
     margin-top: 90px;
+    position: relative;
+    animation: animation_devices 2s infinite;
 }
+
+
 
 
 .arrow-top{
