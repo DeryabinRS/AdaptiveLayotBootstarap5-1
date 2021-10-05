@@ -208,10 +208,6 @@ h5{font-size: 18px;}
     position: relative;
 }
 
-.section-2 .cardbox:nth-child(2){
-    top:50px
-}
-
 .section-3{position: relative;}
 .section-3 img{
     position: relative;
@@ -424,7 +420,7 @@ footer{
     }
 }
 @media (min-width: 1400px){
-    .section-2 .cardbox1:nth-child(2){
+    .section-2 .cardbox:nth-child(2){
         top:50px
     }
     .container{
