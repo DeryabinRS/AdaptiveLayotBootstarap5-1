@@ -24,6 +24,11 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     })
 
+    const scrollUp = document.querySelector('#scrollUp');
+    scrollUp.addEventListener('click', () => {
+        window.innerHeight = 0;
+    })
+
 })
 
 
