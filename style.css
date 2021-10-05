@@ -10,6 +10,10 @@ body{
 }
 
 a{color: var(--g_color_2); text-decoration: none;}
+.arrow_link svg{display:inline-block; position: relative;}
+.arrow_link:hover svg{
+    left: 5px;
+}
 
 .bg1{background: var(--g_color_1);}
 .bg2{background: var(--g_color_2);}
