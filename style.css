@@ -432,6 +432,9 @@ footer{
     }
 }
 @media (max-width: 1399px){
+    .section-2 .cardbox:nth-child(2){
+        top:0px
+    }
     .section-3 .img::after{
         display: none;
     }
