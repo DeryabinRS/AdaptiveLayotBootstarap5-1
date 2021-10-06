@@ -110,7 +110,7 @@ h5{font-size: 18px;}
     max-width: 655px;
 }
 
-.title_box{margin: 90px auto;}
+.title_box{margin: 90px auto 15px;}
 .title_box h2{font-weight: bold;}
 .title_box p {
     line-height: 27px;
