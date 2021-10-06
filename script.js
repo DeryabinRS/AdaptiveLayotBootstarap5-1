@@ -29,6 +29,11 @@ window.addEventListener("DOMContentLoaded", () => {
         window.innerHeight = 0;
     })
 
+    const scrollDown = document.querySelector('.arrow-top');
+    scrollDown.addEventListener('click', () => {
+        window.scrollTo(0, document.body.scrollHeight);
+    })
+
 })
 
 
