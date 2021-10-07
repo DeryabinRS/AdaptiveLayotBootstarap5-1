@@ -457,6 +457,12 @@ footer{
         background-image: none;
     }
 }
+@media (max-width:991px){
+    .navbar .navbar-nav {
+        align-items: flex-end;
+        border-bottom: 2px solid var(--g_color_2);
+    }
+}
 @media (max-width:500px) {
     .section-7 .news_box {
         flex-wrap: wrap;
