@@ -457,3 +457,27 @@ footer{
         background-image: none;
     }
 }
+@media (max-width:500px) {
+    .section-7 .news_box {
+        flex-wrap: wrap;
+    }
+    .section-7 .news_box .desc {
+        padding: 10px 0;
+    }
+    .section-7 .news_box .desc p{
+        margin: 5px;
+    }
+    .btn-custom {
+        min-width: 135px;
+    }
+    .section-5 .cards .cardbox:nth-child(n+2) {
+        min-width: 290px;
+    }
+    .navbar .navbar-nav {
+        align-items: flex-end;
+        border-bottom: 2px solid var(--g_color_2);
+    }
+    header .title_box {
+        margin-top: 40px;
+    }
+}
